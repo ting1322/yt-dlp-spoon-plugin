@@ -31,8 +31,13 @@ windows 的話目錄是 `C:\Users\<USER_NAME>\AppData\Roaming\yt-dlp-plugins\`
 3. 試著找一個 spoon 的網址，給 yt-dlp 下參數 `yt-dlp -F --verbose https://www.spooncast.net/jp/live/@xxxxx`
    如果能抓到直播的格式，那就正確了
 
-## 疑難排解
+# 疑難排解
 
 1. 觀察 `--verbose` 的輸出，有沒有抓到 `yt-dlp-plugins` 目錄
 2. 確定你有一層不漏，一字不改的建好目錄結構
 3. 確定你給的網址是 jp 版的 spoon。另外也有 kr 版，這邊不支援。
+
+# 已知問題
+
+spoon 的存檔一般會有 mp4 可以下載，但是有一種存檔是 m3u8，我還沒看到實際的例子
+所以沒有把程式寫進去。
