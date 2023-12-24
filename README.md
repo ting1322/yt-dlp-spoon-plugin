@@ -30,6 +30,17 @@ windows 的話目錄是 `C:\Users\<USER_NAME>\AppData\Roaming\yt-dlp-plugins\`
    路徑很重要，一層都不能少！
 3. 試著找一個 spoon 的網址，給 yt-dlp 下參數 `yt-dlp -F --verbose https://www.spooncast.net/jp/live/@xxxxx`
    如果能抓到直播的格式，那就正確了
+   
+# 其他建議
+
+額外資訊的部份，可以抓到封面、標題、上傳者。
+可以建立 yt-dlp 的 [設定檔](https://github.com/yt-dlp/yt-dlp#configuration) 讓這些資訊附加到 mp4 裡面。
+
+```
+--embed-thumbnail
+--embed-metadata
+```
+
 
 # 疑難排解
 
