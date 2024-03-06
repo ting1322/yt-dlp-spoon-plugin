@@ -56,20 +56,16 @@ class SpoonLiveIE(InfoExtractor):
 
         infodict = {
             'formats': formats,
-            '_format_sort_fields': ('source', ),
-        }
-
-        base_dict = {
-            'title': title,
-            'description': description,
-            'thumbnail': thumbnail,
-            'uploader_id': uploader_id,
-            'is_live': True,
         }
 
         return {
             'id': current_live_id,
-            **base_dict,
+            'title': title,
+            'description': description,
+            'thumbnail': thumbnail,
+            'uploader_id': uploader_id,
+            'upload_date': datetime.today().strftime('%Y%m%d'),
+            'is_live': True,
             **infodict,
         }
 
@@ -110,6 +106,7 @@ class SpoonCastIE(InfoExtractor):
             'formats': [{'url':voice_url, 'format_id': 'http-mp4'}],
             'thumbnail': img_url,
             'uploader': nickname,
+            'upload_date': created.strftime('%Y%m%d'),
             'timestamp': created.timestamp(),
             }
 

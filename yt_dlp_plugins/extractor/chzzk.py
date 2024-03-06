@@ -41,6 +41,7 @@ class ChzzkLiveIE(InfoExtractor):
             'title': title,
             'thumbnail': thumbnail,
             'uploader_id': channel_name,
+            'upload_date': datetime.today().strftime('%Y%m%d'),
             'is_live': True,
             'formats': formats,
         }
