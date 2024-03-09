@@ -4,6 +4,12 @@ yt-dlp plugin for `https://www.spooncast.net/jp/live/`
 
 這邊只負責把 spoon 的 m3u8 網址抓出來，剩下的事情 yt-dlp + ffmpeg 會處理。
 
+支援的網址:
+
+- spoon jp 直播 `https://www.spooncast.net/jp/live/@XXXX`
+- spoon jp 存檔 `https://www.spooncast.net/jp/cast/XXXX`
+- chzzk 韓國奇怪平台 `https://chzzk.naver.com/live/XXXXXXXXXXXXXX`
+
 # Install
 
 目錄有很多種選擇，參考： https://github.com/yt-dlp/yt-dlp#installing-plugins
@@ -47,6 +53,8 @@ windows 的話目錄是 `C:\Users\<USER_NAME>\AppData\Roaming\yt-dlp-plugins\`
 1. 觀察 `--verbose` 的輸出，有沒有抓到 `yt-dlp-plugins` 目錄
 2. 確定你有一層不漏，一字不改的建好目錄結構
 3. 確定你給的網址是 jp 版的 spoon。另外也有 kr 版，這邊不支援。
+4. 遇到錯誤 `Error demuxing input file 0: Invalid data found when processing input`。
+   檢查 ffmpeg 版本，不要用 6.0.1，使用 5.0.x 或是 6.1.x 能避開問題。
 
 # 已知問題
 
