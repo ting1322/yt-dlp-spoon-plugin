@@ -8,7 +8,6 @@ yt-dlp plugin for `https://www.spooncast.net/jp/live/`
 
 - spoon jp 直播 `https://www.spooncast.net/jp/live/@XXXX`
 - spoon jp 存檔 `https://www.spooncast.net/jp/cast/XXXX`
-- chzzk 韓國奇怪平台 `https://chzzk.naver.com/live/XXXXXXXXXXXXXX`
 
 # Install
 
